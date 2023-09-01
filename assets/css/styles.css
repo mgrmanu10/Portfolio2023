@@ -138,7 +138,7 @@ ul{
 
   
 .nav-list a:hover{
-    background-color: var(--main-blue);
+    background-color: var(--main-gold);
     transition: all 0.3s;
     color: var(--main-white);
 }
@@ -159,8 +159,8 @@ ul{
   display: inline-block;
   padding: 15px 22px;
   background: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-  border: 1px solid var(--main-blue);
-  margin-top: 30px;
+  border: 1px solid var(--main-gold);
+  margin-top: 50px;
   margin-bottom: 5px;
   color: #fff;
   text-decoration: none;
@@ -243,16 +243,18 @@ ul{
   }
   
   #hero .social-links a {
-    font-size: 24px;
+    font-size: 34px;
     display: inline-block;
     color: #45505b;
     line-height: 1;
     margin-right: 20px;
     transition: 0.3s;
+    
   }
   
   #hero .social-links a:hover {
     color: #0563bb;
+    ;
   }
   
 
@@ -296,7 +298,7 @@ section {
     display: block;
     width: 40px;
     height: 3px;
-    background: #0563bb;
+    background: var(--main-gold);
     bottom: 0;
     left: calc(50% - 20px);
   }

@@ -162,7 +162,7 @@ ul{
   display: inline-block;
   padding: 15px 22px;
   background: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-  border: 1px solid var(--main-gold);
+  border: 1px solid var(--main-blue);
   margin-top: 50px;
   margin-bottom: 5px;
   color: #fff;
@@ -389,6 +389,12 @@ section {
   
   .about .content p:last-child {
     margin-bottom: 0;
+  }
+
+  .about-icon{
+    z-index: 100;
+    width: 60px;
+    float: right;
   }
 
   /* Skills */

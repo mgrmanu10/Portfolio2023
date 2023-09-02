@@ -30,7 +30,7 @@
       </nav>
     <!-- Sección de Inicio -->
     <section id="hero" class="d-flex flex-column justify-content-center">
-        <div class="container">
+        <div class="container"  data-aos="zoom-out" data-aos-delay="50">
           <img src="assets/img/foto perfil.PNG" alt="Picture of the author" style="margin-top: 30px; width: 150px; height: 150px; object-fit: cover;" class="rounded-full">
           <h1>Manuel García Romero</h1>
           <p>Soy <span class="typed" data-typed-items="Ingeniero Biomédico, Ingeniero Software, Desarrollador Front-End"></span></p>
@@ -47,8 +47,8 @@
       <main id="main">
          <!-- ======= About Section ======= -->
       <section id="about" class="about">
-        <div class="container aos-init aos-animate" style="padding: 20px;
-        border-radius: 25px;" data-aos="fade-up">  
+        <div class="container " style="padding: 20px;
+        border-radius: 25px;" data-aos="zoom-in" data-aos-delay="25">  
           <div class="section-title">
             <h2>Sobre mí<i class="bx bx-user" style="margin-left: 8px; color:  var(--main-gold);"></i></h2>
             <br/>
@@ -57,19 +57,24 @@
 
               <p style=" text-align: left; letter-spacing: 0.75px;">Soy graduado en Ingeniería de la Salud (esp. Biomédica) e Ingeniero Software por Máster con más 1 año de experiencia laboral
                 en el sector IT (Testing y Frontend Development) y con más de 2 años programando de forma autodidacta. </p>
-            </div>
+                <img src="assets/img/aboutme/brain.png" alt="learning" class="about-icon">
+              </div>
 
             <div class="about-card">
 
               <p style=" text-align: left; letter-spacing: 0.75px;">Soy una persona apasionada por su trabajo (con un toque perfeccionista) que tiene un firme compromiso de seguir formándose profesionalmente. 
               </p>
+              <img src="assets/img/aboutme/progress.png" alt="progress" class="about-icon">
+
             </div>  
             <div class="about-card">
 
               <p style="text-align:  left; letter-spacing: 0.75px;">
                 Mi objetivo es alcanzar un nivel de conocimiento que me permita realizar divulgación tecnológica, 
                 ayudando así a aquellos que están dando sus primeros pasos en este viaje de aprendizaje
-                para que disfruten al máximo de su camino en la programación.</p>            
+                para que disfruten al máximo de su camino en la programación.</p>      
+                <img src="assets/img/aboutme/twitch.png" alt="twitch" class="about-icon">
+      
               </div>
 
           <div class="about-card">
@@ -94,8 +99,8 @@
       </section> 
       
       <section id="skills" class="skills">
-        <div class="container aos-init aos-animate" style="padding: 20px;
-        border-radius: 25px;" data-aos="fade-up">  
+        <div class="container " style="padding: 20px;
+        border-radius: 25px;" data-aos="zoom-in" data-aos-delay="25">  
          <div class="section-title">
           <h2>Habilidades<i class="bx bx-brain" style="margin-left: 8px; color:  var(--main-gold);"></i></h2>
           <br/>
@@ -128,8 +133,10 @@
 
 
           <div class="card-skill">
-              <p style="text-align: left;">Otras tecnologías y herramientas que he usado y tengo conocimiento son: AWS EC2 y Docker (Devops), Postman, Swagger y Cypress (Testing), 
-                NodeJS y MongoDB (Backend y Bases de Datos), Azure Devops, Jira (Scrum Tools) y GIT (Control de Versiones).</p>
+              <p style="text-align: left;">Otras tecnologías y herramientas que he usado y tengo conocimiento son: <strong>AWS EC2</strong>
+                 y <strong>Docker</strong>(Devops); <strong>Postman</strong>, <strong>Swagger</strong> y <strong>Cypress</strong> (Testing); 
+              <strong>NodeJS</strong> y <strong>MongoDB</strong> (Backend y Bases de Datos); <strong>Azure Devops</strong> y <strong>Jira</strong> (Scrum Tools); <strong>GIT</strong> (Control de Versiones).</p>
+
 
                 <div class="skills__container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
               <div class="skills__item"><img src="assets/img/skills/amazonEC2.png" alt="AWS EC2 icon" class="skills__icon"></div>          
@@ -150,7 +157,7 @@
       
       </main>
       
-   
+    <div id="preloader"></div>
       <!-- Vendor JS Files -->
    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
    <script src="assets/vendor/aos/aos.js"></script>

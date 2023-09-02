@@ -1,20 +1,23 @@
 :root{
     --main-white: #f0f0f0;
+    --secondary-white: #F5F5F7;
     --main-red: #ca112a;
     --main-blue: #0563BB;
-    --main-gray: #45505B;
+    --main-gray: #6e6e73;
     --secondary-gray: #626B75;
     --main-black: #1d1d1d;
     --main-gold: #ffc107;
+    
 }
 
 
 
 body{
 
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    overflow: auto;
-    
+  font-family: SF Pro Display, SF Pro Icons, -apple-system, system-ui,  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow: auto;
+  letter-spacing: -.003em;
+  line-height: 1.08349;
 }
 
 /*--------------------------------------------------------------
@@ -177,7 +180,7 @@ ul{
 }
 
 #update{
-  font-size: 10px !important;
+  font-size: 12px !important;
   margin-bottom: 20px !important;
 }
 
@@ -307,12 +310,32 @@ section {
     margin-bottom: 0;
   }
 
+  /* ABOUT */
+
   .about{
     background-size: cover;
     position: relative;
     z-index: 0;
   }
 
+  .about-card{
+    box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+    white-space: normal;
+  }
+
+  .answer{
+    color: var(--main-gold) !important;
+    margin-bottom: 10px !important;
+  }
+
+  
   .about::before{
     content: "";
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
@@ -366,6 +389,94 @@ section {
   
   .about .content p:last-child {
     margin-bottom: 0;
+  }
+
+  /* Skills */
+
+  .skills{
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    background: var(--secondary-white)
+  }
+
+  .skills .section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: var(--main-gray);
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  
+  .skills__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+ 
+  }
+  
+  .skills__item {
+    width: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    border: 1px solid transparent;
+  }
+  
+  .skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+  }
+  
+  .skills__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .skills .progress .skill {
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #45505b;
+  }
+  
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .skills .progress-bar-wrap {
+    background: #f2f3f5;
+  }
+  
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #0563bb;
+  }
+
+  .card-skill{
+    box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+    white-space: normal;
   }
     
 }

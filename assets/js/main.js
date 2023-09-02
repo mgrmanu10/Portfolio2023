@@ -197,7 +197,7 @@
       }
   
     });
-  
+
     /**
      * Initiate portfolio lightbox 
      */

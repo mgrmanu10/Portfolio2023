@@ -998,6 +998,7 @@ border-radius: 0;
 .skills__icon {
 width: 2rem;
 height: 2rem;
+object-fit: contain;
 }
 
 .skills .progress .skill {
@@ -1548,6 +1549,7 @@ border-radius: 0;
 .skills__icon {
 width: 2rem;
 height: 2rem;
+object-fit: contain;
 }
 
 .skills .progress .skill {
